@@ -9,4 +9,8 @@ class HomesController < ApplicationController
   def home
     @recipes = Recipe.all
   end
-end
+
+  def show
+    recipes = Recipe.all
+  end
+end 
