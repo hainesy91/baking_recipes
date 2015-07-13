@@ -2,7 +2,7 @@ class SearchController < ApplicationController
 
   def index
      @recipes = Recipe.all
-      #= params[:q][:address]
-     @search_results = Recipe.select { |recipe| recipe.name.downcase.include? params[:q].downcase }
+     @search_results = Recipe.select { |recipe| recipe.name params[:q]}
+     binding.pry
   end
 end
