@@ -2,11 +2,17 @@ Rails.application.routes.draw do
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  resources :ingredients
-  resources :recipes
+
+  root 'recipes#index'
+
+  resources :homes
+
+  resources :recipes do 
+    resources :ingredients
+  end
+  
   resources :search
   # You can have the root of your site routed with "root"
-  root 'recipes#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

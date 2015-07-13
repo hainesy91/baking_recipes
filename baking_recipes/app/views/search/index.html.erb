@@ -1,0 +1,14 @@
+<div id="search_results"><h1>List of Recipes</h1></div>
+
+<div id="list">
+  <% @search_results.each do |recipe| %>
+    <p><%= link_to recipe.name, recipe_path(recipe) %></p>
+  <% end %>
+</div>
+
+<div id="add">
+  <%= link_to 'Add a new Recipe', new_recipe_path %>
+
+  <% @recipes.each do |recipe| %>
+  <% end %>
+</div>

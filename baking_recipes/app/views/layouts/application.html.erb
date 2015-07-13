@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BakingRecipes</title>
+  <title>CakeWalk</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav id="home"><%= link_to 'Home', homes_path %></nav>
+
   <div id="user_nav">
    <% if current_user %>
      Logged in as <%= current_user.email %>.
