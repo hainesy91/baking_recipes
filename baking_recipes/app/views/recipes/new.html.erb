@@ -11,9 +11,13 @@
 
   <%= form.label :method %>
   <%= form.text_field :method %>
+  
+  <% @ingredients.each do |ingredient| %>
 
-  <%= form.label :ingredients %>
-  <%= form.check_box :ingredients %>
+    <%= check_box_tag "recipe[ingredient_ids][]", ingredient.id %>
+    <%= ingredient.name %>
+
+    <% end %>
 
   <%= form.submit 'Submit' %>
 

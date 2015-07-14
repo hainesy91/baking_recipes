@@ -14,7 +14,7 @@ class RecipesController < ApplicationController
   end
 
   def create
-    recipe = Recipe.new params[:recipe].permit(:name, :description, :time, :method)
+    recipe = Recipe.create(recipe_params)
 
     if recipe.save
       redirect_to root_path
@@ -26,7 +26,6 @@ class RecipesController < ApplicationController
   private
 
   def recipe_params
-    params.require(:recipe).permit(:name, :description, :time, :method,
-    :ingredients_attributes => [:name])
+    params.require(:recipe).permit(:name, :description, :time, :method, {ingredient_ids: []})
   end
 end

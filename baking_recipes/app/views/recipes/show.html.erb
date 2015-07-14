@@ -5,3 +5,9 @@
 <h2><%= @recipe.time %></h2>
 
 <h2><%= @recipe.method %></h2>
+
+<% @recipe.ingredients.each do |ingredient| %>
+
+  <h3><%= ingredient.name %></h3>
+
+<% end %>
