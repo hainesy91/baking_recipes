@@ -8,4 +8,12 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
   end
 
+  def new
+    @recipe = Recipe.new
+  end
+
+  def create
+    recipe = Recipe.new params[:recipe].permit(:name, :description, :time, :method)
+  end
+
 end
