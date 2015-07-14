@@ -5,6 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Recipe.delete_all
+Ingredient.delete_all
+
 r1 = Recipe.create(name: 'Vanilla Cheesecake', description: 'Classic American Style Cheesecake', time: '30 Mins', method: 'Step 1')
 r2 = Recipe.create(name: 'Strawberry Cheesecake', description: 'Perfect for Summer', time: '40 mins', method: 'Step 1, Step 2')
 r3 = Recipe.create(name: 'Chocolate Cheesecake', description: 'Modern twist on an Original', time: '35 mins', method: 'Step 1')
