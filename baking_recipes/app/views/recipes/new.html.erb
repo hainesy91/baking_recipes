@@ -1,0 +1,17 @@
+<%= form_for @recipe do |form| %>
+  
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :description %>
+  <%= form.text_field :description %>
+
+  <%= form.label :time %>
+  <%= form.text_field :time %>
+
+  <%= form.label :method %>
+  <%= form.text_field :method %>
+
+  <%= form.submit 'Submit' %>
+
+<% end %>
