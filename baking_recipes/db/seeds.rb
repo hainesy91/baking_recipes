@@ -12,7 +12,7 @@ r1 = Recipe.create(name: 'Vanilla Cheesecake', description: 'Classic American St
 r2 = Recipe.create(name: 'Strawberry Cheesecake', description: 'Perfect for Summer', time: '40 mins', method: 'Step 1, Step 2')
 r3 = Recipe.create(name: 'Chocolate Cheesecake', description: 'Modern twist on an Original', time: '35 mins', method: 'Step 1')
 
-i1 = Ingredient.create(name: 'Vanilla Essence')
+i1 = Ingredient.create(name: 'Butter')
 i2 = Ingredient.create(name: 'Cream Cheese')
 i3 = Ingredient.create(name: 'Digestive Biscuits(crushed)')
 i4 = Ingredient.create(name: 'Strawberries')
