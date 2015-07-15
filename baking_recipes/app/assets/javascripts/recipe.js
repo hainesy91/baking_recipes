@@ -6,7 +6,10 @@ $(document).ready(function(){
       format: "json"
     })
     .done(function(data){
-      $.each(data.items, function(i, item){})
+      var calories = data.hits[0].fields.nf_calories;
+      var fat = data.hits[0].fields.nf_total_fat;
+      var serving = data.hits[0].fields.nf_serving_size_qty
+      $(".ingredient_info").append("<h1>" + calories + "</h1>")
     })
   })
 })
