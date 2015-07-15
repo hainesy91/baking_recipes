@@ -7,8 +7,9 @@
 </div>
 
 <div id="add">
-  <%= link_to 'Add a new Recipe', new_recipe_path %>
-
+  <% if current_user %>
+    <%= link_to 'Add a new Recipe', new_recipe_path %>
+  <% end %>
   <% @recipes.each do |recipe| %>
   <% end %>
 </div>

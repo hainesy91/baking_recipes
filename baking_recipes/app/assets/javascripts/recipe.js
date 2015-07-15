@@ -8,8 +8,9 @@ $(document).ready(function(){
     .done(function(data){
       var calories = data.hits[0].fields.nf_calories;
       var fat = data.hits[0].fields.nf_total_fat;
-      var serving = data.hits[0].fields.nf_serving_size_qty
-      $(".ingredient_info").append("<h1>" + calories + "</h1>")
+      var serving = data.hits[0].fields.nf_serving_size_qty;
+      $(".ingredient_info").empty();
+      $(".ingredient_info").append("<h1>Calories " + calories + "</h1>" + "<h1>Fat " + fat + "g</h1>" + "<h1>Servings: " + serving + "</h1>" )
     })
   })
 })

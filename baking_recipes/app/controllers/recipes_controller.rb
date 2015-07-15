@@ -9,8 +9,12 @@ class RecipesController < ApplicationController
   end
 
   def new
-    @ingredients = Ingredient.all
-    @recipe = Recipe.new
+    if current_user
+      @ingredients = Ingredient.all
+      @recipe = Recipe.new
+    else
+      redirect_to root_path
+    end
   end
 
   def create
