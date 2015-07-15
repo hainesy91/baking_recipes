@@ -8,6 +8,8 @@
 
 <% @recipe.ingredients.each do |ingredient| %>
 
-  <h3><%= ingredient.name %></h3>
+  <h3 class="ingredient_name"><%= ingredient.name %></h3>
 
 <% end %>
+
+<div class="ingredient_info"></div>
