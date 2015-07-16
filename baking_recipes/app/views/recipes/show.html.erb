@@ -6,17 +6,17 @@
 
 </div>
 
-<h2><%= @recipe.description %></h2>
-
-<h2><%= @recipe.time %></h2>
-
-<h2><%= @recipe.method %></h2>
-
 <% @recipe.ingredients.each do |ingredient| %>
 
   <ul><li class="ingredient_name"><%= ingredient.name %></li></ul>
 
 <% end %>
+
+<h2><%= @recipe.description %></h2>
+
+<h2><%= @recipe.time %></h2>
+
+<h2><%= @recipe.method %></h2>
 
 <div class="ingredient_info"></div>
 
