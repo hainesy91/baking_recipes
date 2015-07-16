@@ -13,9 +13,13 @@ r2 = Recipe.create(name: 'Strawberry Cheesecake', description: 'Perfect for Summ
 r3 = Recipe.create(name: 'Chocolate Cheesecake', description: 'Modern twist on an Original', time: '35 mins', method: 'Step 1')
 
 i1 = Ingredient.create(name: 'Butter')
-i2 = Ingredient.create(name: 'Cream Cheese')
-i3 = Ingredient.create(name: 'Digestive Biscuits(crushed)')
-i4 = Ingredient.create(name: 'Strawberries')
+i2 = Ingredient.create(name: 'Eggs')
+i3 = Ingredient.create(name: 'Sugar')
+i4 = Ingredient.create(name: 'Plain Flour')
+i5 = Ingredient.create(name: 'Self-Raising Flour')
+i6 = Ingredient.create(name: 'Vanilla Essence')
+i6 = Ingredient.create(name: 'Chocolate')
+i7 = Ingredient.create(name: '')
 
 r1.ingredients_recipes.create(ingredient_id: i1.id)
 r1.ingredients_recipes.create(ingredient_id: i2.id)
