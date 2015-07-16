@@ -19,7 +19,7 @@ i4 = Ingredient.create(name: 'Plain Flour')
 i5 = Ingredient.create(name: 'Self-Raising Flour')
 i6 = Ingredient.create(name: 'Vanilla Essence')
 i6 = Ingredient.create(name: 'Chocolate')
-i7 = Ingredient.create(name: '')
+i7 = Ingredient.create(name: 'Milk')
 
 r1.ingredients_recipes.create(ingredient_id: i1.id)
 r1.ingredients_recipes.create(ingredient_id: i2.id)

@@ -9,7 +9,9 @@
 <div id="add">
   <% if current_user %>
     <%= link_to 'Add a new Recipe', new_recipe_path %>
+    <% else puts 'Please log in to add Recipes' %>
   <% end %>
   <% @recipes.each do |recipe| %>
   <% end %>
 </div>
+
