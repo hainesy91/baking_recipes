@@ -16,8 +16,8 @@
       <li role="presentation" class="nav_link"><%= link_to "Sign up", new_user_registration_path %></li>
       <li role="presentation"><%= link_to "Log in", new_user_session_path %></li>
       <% else %>
-        Logged in as <%= current_user.email %>
         <li role="presentation" class="nav_link"><%= link_to "Log out", destroy_user_session_path, :method => :delete %></li>
+        <li role="presentation" class="user_log">Logged in as <%= current_user.email %></li>
     <% end %>
   </ul>
  

@@ -4,6 +4,23 @@
 
 .nav-pills {
   background-color: rgb(222, 167, 61);
-  position: fixed;
 }
 
+.user_log {
+  text-align: right;
+}
+
+.title {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+
+.recipe_name {
+  font-family: helvetica;
+  font-style: italic;
+}
+
+#search {
+  text-align: center;
+  padding: 100px;
+}
