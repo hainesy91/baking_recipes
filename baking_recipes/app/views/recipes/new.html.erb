@@ -1,5 +1,6 @@
 <%= form_for (@recipe) do |form| %>
   
+<div class="form">
   <%= form.label :name %>
   <%= form.text_field :name %>
 
@@ -11,6 +12,7 @@
 
   <%= form.label :method %>
   <%= form.text_field :method %>
+</div>
 
   <%= form.file_field :image %>
   
