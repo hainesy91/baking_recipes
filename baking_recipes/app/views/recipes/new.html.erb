@@ -20,8 +20,8 @@
   </div>
 </div>
 
-  <%= form.file_field :image %>
-  
+    <%= form.file_field :image %>
+
   <% @ingredients.each do |ingredient| %>
 
     <%= check_box_tag "recipe[ingredient_ids][]", ingredient.id %>
