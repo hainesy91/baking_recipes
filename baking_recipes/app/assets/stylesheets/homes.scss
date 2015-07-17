@@ -45,3 +45,17 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
+
+.form_name {
+  font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0px 0px 10px 40px;
+  display: block;
+  border-bottom: 1px solid #DADADA;
+  margin: -10px -30px 30px -30px;
+  color: #888;
+}
+
+.form_name>span {
+  display: block;
+  font-size: 11px;
+}
