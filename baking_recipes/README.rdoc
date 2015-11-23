@@ -1,28 +1,11 @@
-== README
+For our final project, we were allowed to use any language that we wanted to write in, however we had to include an API and it had to have a backend that interacted with the front end.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I decided to create my backend in Rails and Postgres as I felt more comfortable using these. My project was based around finding and following recipes as I love baking. I wanted to have users who could create and upload their recipes (if the recipe wasn't already on the website) to show how to bake. There would be a log in feature, a search feature, add a recipe feature, add ingredients and picture feature.
 
-Things you may want to cover:
+The most challenging part was finding an API for the nutritional data for food, which is surprisingly hard to come by, and websites like myfitnesspal don't give an API key away easily, and with a week to deliver the project, there wasn't a lot of time. 
+I used a Gem to install devise to be able to have users that could log in and create recipes (something that could only be done by a logged in user) and carrier wave to attach pictures to the recipes.
+When I finally managed to find an API that had nutritional data, I wrote a jQuery function that used the data from the API (in JSON format) to match against an ID for the ingredient (in a recipe like butter, sugar etc) and return the nutrional information in a string which was also done in AJAX. 
+This is something I'm very proud of on this project as it was the first time I fully understood how to use an manipulate JSON data in a jQuery function and had working AJAX on one of my projects!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+I managed to finish the main functionalities of my website for the deadline, having everything working the way I intended and my backend being able to store the newly created recipes on my database. 
+I would like to do more work on my website but just for styling purposes as it looks very basic. When I polish it up a bit I'll push it live on Heroku (CSS being something I need more time to work with and use).
